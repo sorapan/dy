@@ -1,0 +1,36 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.section{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#page1{
+
+    background-color: #2B2B2B;
+
+}
+
+#page2{
+
+    background-color: gold;
+
+}
+
+#page3{
+
+    background-color: orangered;
+
+}

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'chau';
+    font-style: normal;
+    src: url(../layout1/font/ChauPhilomeneOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'chau';
+    font-style: italic;
+    src: url(../layout1/font/ChauPhilomeneOne-Italic.ttf);
+}
+@font-face {
+
+    font-family: 'open sans';
+    font-style: normal;
+    src: url(../layout1/font/OpenSans-Regular.ttf);
+
+}
+

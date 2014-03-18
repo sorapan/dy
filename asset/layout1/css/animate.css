@@ -1,0 +1,60 @@
+#window,.uploadpage{
+
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left:50%;
+    margin-left: -160px;
+    top:150px;
+    border: 1px solid white;
+    background-position: 0;
+    background-size:auto 100%;
+    border-radius:150px ;
+    z-index: 1;
+
+}
+
+#window{
+
+    background-image: url('../img/sky.png');
+    animation:aa 10s infinite linear;
+    -webkit-animation:aa 10s infinite linear;
+
+}
+
+@keyframes aa{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1500px;
+    }
+}
+
+@-webkit-keyframes aa{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: -1500px;
+    }
+}
+
+.uploadpage{
+
+    animation:bb 15s infinite ease-out;
+    border-radius: 0;
+    border: 3px solid white;
+    overflow: hidden;
+
+}
+
+.uu{
+
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid white;
+
+}

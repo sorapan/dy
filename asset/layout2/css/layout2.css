@@ -1,0 +1,228 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    font-family: "open sans",sans-serif;
+    position: relative;
+}
+
+#modal{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.5;
+    display: none;
+
+}
+
+#modal.display{
+
+    display: inherit;
+
+}
+
+#sidebar{
+    float: left;
+    height: 100%;
+    width: 15%;
+    padding-top: 60px;
+    background-color: #1c3145;
+
+}
+#menu_button{
+    float: left;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    width: 100%;
+    height: 45px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+#content{
+    float: left;
+    width: 85%;
+    height: 100%;
+    background-color: white;
+}
+
+#filelist{
+
+    float: left;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+#header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 36px;
+    background-color: #1c3145;
+    color: lightblue;
+    padding-left: 30px;
+}
+
+#upload_box{
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background-color: lightblue;
+    left: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+
+}
+
+#upload_box.upload_box_open{
+    height: 300px;
+    z-index: 1000;
+}
+
+#upload_display{
+
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/arrow_upload.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center;
+
+}
+
+#upload_img{
+
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+
+
+}
+
+#uploadarrow{
+
+    width: 80px;
+    height: auto;
+    vertical-align:middle;
+
+}
+
+#close_upload_box{
+
+    float: right;
+    margin-right: 50px;
+    cursor: pointer;
+
+}
+
+#upload_header,#upload_middle,#upload_bottom{
+
+    float: left;
+    width: 100%;
+
+}
+
+#upload_header{
+
+    height: 30px;
+    line-height: 30px;
+
+}
+
+#upload_middle{
+
+    height: 200px;
+    overflow-y: scroll;
+    border-top: 2px dashed  white;
+    border-bottom: 2px dashed  white;
+
+}
+
+#upload_list{
+
+    padding: 10px;
+
+}
+
+#upload_bottom{
+
+    height: 70px;
+    padding-top: 10px;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.button_style1{
+
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px 0 30px;
+    text-decoration: none;
+    background-color: #1c3145;
+    color:white;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+#upload_btn{
+
+    float: right;
+    margin-right: 10px;
+
+}
+
+#add_btn{
+
+    float: right;
+    margin-right: 10px;
+
+}
+#filelist_table{
+
+    font-size: 14px;
+    color:#1c3145;
+    border-collapse:collapse;
+    width: 100%;
+
+}
+tr{
+
+    border-bottom: 1px #a9a9a9 dashed;
+
+}
+td,th{
+
+    padding: 5px 60px 5px 10px;
+    text-align: left;
+
+}
+
+th{
+
+    color:lightblue;
+    background-color:#242424;
+
+}
+
+td, #filelist_table a{
+
+    color:#1c3145;
+    background-color: white;
+
+}
