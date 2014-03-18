@@ -36,4 +36,32 @@ class User_model extends CI_Model  {
 
     }
 
+    function checkPassword($pass){
+
+        $this->db->from('user');
+        $this->db->where("password",$pass);
+        $aa = $this->db->get();
+        $arr = $aa->result();
+        if(!empty($arr)){
+
+            return true;
+
+        }else{
+
+            return false;
+
+        }
+
+    }
+
+    function updatePassword($userid,$pass){
+
+        $data = array(
+            'password' => $pass,
+        );
+        $this->db->where('id', $userid);
+        $this->db->update('user', $data);
+
+    }
+
 } 

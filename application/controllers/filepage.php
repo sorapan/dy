@@ -43,7 +43,19 @@ class filepage extends CI_Controller {
 
     public function chk_profile(){
 
+        if($this->user_model->checkPassword($_POST['pass'])){
 
+            $this->user_model->updatePassword($this->session->userdata('userid'),$_POST['npass']);
+            echo "Succesful!!<br>";
+            echo "Please Wait....";
+            $this->output->set_header('refresh:2;url='.base_url());
+
+        }else{
+
+            echo "Password is wrong<br>";
+            echo '<a href="'.base_url().'profile">Please Back</a>';
+
+        }
 
     }
 

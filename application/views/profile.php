@@ -35,9 +35,9 @@
 
         <form method="post" action="<?php echo base_url()?>chk_profile">
             <label for="pass">Old Password : </label><input type="password" name="pass" id="pass"><br>
-            <label for="pass">New Password : </label><input type="password" name="npass" id="pass"><br>
+            <label for="pass">New Password : </label><input type="password" name="npass" id="npass"><br>
             <label for="cpass">Confirm Password : </label><input type="password" name="cpass" id="cpass"><br><br>
-            <button type="submit">Change</button>
+            <button type="submit" id="submit">Change</button>
         </form>
 
     </div>
@@ -49,6 +49,21 @@
 <script>
 
     $(function(){
+
+        $(document).on('click','#submit',function(){
+
+            if($(' #npass').val() != $(' #cpass').val() || $(' #npass').val() == ""){
+
+                alert('Password not matched.');
+                return false
+
+            }else{
+
+                return true;
+
+            }
+
+        })
 
     })
 
